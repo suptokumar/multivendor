@@ -21,7 +21,7 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div style="text-align: center;">
-           <h1>To buy something you need to come again after a month.</h1>
+           <h1>This is Home Page</h1>
         </div>
 </div>
 </div>
