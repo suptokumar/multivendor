@@ -14,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', "SiteController@home");
-Route::get('/blog', "SiteController@blog");
+Route::get('/about', "SiteController@blog");
 Route::get('/contact', "SiteController@contact");
+Route::get('/news', "SiteController@news");
 Route::get('/profile/{namevalue}', "SiteController@name");
 
 
@@ -32,3 +33,5 @@ return "a";
 		return "a";
 	});
 });
+
+Route::get("/make","SiteController@make")->name("dk");

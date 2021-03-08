@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: arial;
+}
+.flex-center{
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	display: flex;
+	height: 95vh;
+}

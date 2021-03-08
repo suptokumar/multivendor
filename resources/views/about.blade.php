@@ -1,40 +1,21 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-<style>
-.full-height {
-    height: 96vh;
-    font: 35px arial;
-}
-
-.flex-center {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-</style>
+@extends('layout.app')
+@section('title','About page')
+@includeif("layout.header",["home"=>"about"])
 <div class="flex-center position-ref full-height">
-    <div class="content">
-        <div style="text-align: center;">
-        	@if (!empty($name))
-           		<h1>This is {{$name}} Page</h1>
-           	@else
-           		<h1>This is Blog Page</h1>
-           		@foreach ($lan as $l)
-           			{{ $loop->index }} : {{ $l }}
-           		@endforeach
+<div class="content">
+    <div style="text-align: center;">
+       <h1>This is About Page</h1>
+       <a href="{{url('/blog')}}">Blog</a>
+       <a href="{{route('dk')}}">Make</a>
+       <a href="{{url('/contact')}}">Contact</a>
+    </div>
+@php
+	
+for($i=0; $i<20; $i++)
+{
+echo $r = rand(10,20);
+}
 
-           		@includeif("footer",["hasi"=>"Hahaha"])
-           	@endif
-        </div>
+@endphp
 </div>
 </div>
-
-
-</body>
-</html>

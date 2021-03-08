@@ -13,7 +13,13 @@ class SiteController extends Controller
     	return view("about",["lan"=>array("bangla","english","hindi","tamil","malika","salika","mayan")]);
     }
     public function contact(){
-    	return "This is a contact page";
+    	return view("contact");
+    }
+    public function make(){
+    	return "This is a make page";
+    }
+    public function news(){
+    	return view("news");
     }
     public function name($namevalue){
     	return view("about", ["name"=>$namevalue]);
