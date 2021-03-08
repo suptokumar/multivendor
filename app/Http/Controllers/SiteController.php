@@ -10,7 +10,7 @@ class SiteController extends Controller
     	return view("home");
     }
     public function blog(){
-    	return view("about",["lan"=>array("bangla","english")]);
+    	return view("about",["lan"=>array("bangla","english","hindi","tamil","malika","salika","mayan")]);
     }
     public function contact(){
     	return "This is a contact page";

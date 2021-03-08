@@ -26,8 +26,10 @@
            	@else
            		<h1>This is Blog Page</h1>
            		@foreach ($lan as $l)
-           			{{ $l }}
+           			{{ $loop->index }} : {{ $l }}
            		@endforeach
+
+           		@includeif("footer",["hasi"=>"Hahaha"])
            	@endif
         </div>
 </div>
