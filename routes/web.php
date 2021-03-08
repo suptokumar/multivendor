@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "App\Http\Controllers\SiteController@home");
-Route::get('/blog', "App\Http\Controllers\SiteController@blog");
-Route::get('/contact', "App\Http\Controllers\SiteController@contact");
+Route::get('/', "SiteController@home");
+Route::get('/blog', "SiteController@blog");
+Route::get('/contact', "SiteController@contact");
+Route::get('/profile/{namevalue}', "SiteController@name");
+
+
+// Route Grouping
+
+Route::group(['prefix'=>"account"],function(){
+	Route::get("/login",function(){
+return "a";
+	});
+	Route::get("/logout",function(){
+		return "a";
+	});
+	Route::get("/register",function(){
+		return "a";
+	});
+});

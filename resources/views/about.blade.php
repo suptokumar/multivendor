@@ -21,7 +21,14 @@
 <div class="flex-center position-ref full-height">
     <div class="content">
         <div style="text-align: center;">
-           <h1>This is About Page</h1>
+        	@if (!empty($name))
+           		<h1>This is {{$name}} Page</h1>
+           	@else
+           		<h1>This is Blog Page</h1>
+           		@foreach ($lan as $l)
+           			{{ $l }}
+           		@endforeach
+           	@endif
         </div>
 </div>
 </div>

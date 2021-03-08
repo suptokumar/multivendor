@@ -22,6 +22,8 @@
     <div class="content">
         <div style="text-align: center;">
            <h1>This is Home Page</h1>
+           <a href="{{url('/blog')}}">Blog</a>
+           <a href="{{url('/contact')}}">Contact</a>
         </div>
 </div>
 </div>
