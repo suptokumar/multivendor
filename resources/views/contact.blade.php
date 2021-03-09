@@ -9,6 +9,26 @@
        <a href="{{url('/blog')}}">Blog</a>
        <a href="{{route('dk')}}">Make</a>
        <a href="{{url('/contact')}}">Contact</a>
+
+<table border = "1">
+<tr>
+<td>Id</td>
+<td>First Name</td>
+<td>Last Name</td>
+<td>City Name</td>
+<td>Email</td>
+</tr>
+@foreach ($users as $user)
+<tr>
+<td>{{ $user->id }}</td>
+<td>{{ $user->email }}</td>
+<td>{{ $user->password }}</td>
+</tr>
+@endforeach
+</table>
+
+
+
     </div>
 </div>
 </div>
