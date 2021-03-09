@@ -1,5 +1,6 @@
 @extends('layout.app')
-@section('title','home page')
+@section('title','Home Page')
+@section('content')
 @includeif("layout.header",["home"=>"home"])
 <div class="flex-center position-ref full-height">
 <div class="content">
@@ -11,3 +12,4 @@
     </div>
 </div>
 </div>
+@endsection

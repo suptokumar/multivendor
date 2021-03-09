@@ -1,5 +1,6 @@
 @extends('layout.app')
 @section('title','News Page')
+@section('content')
 @includeif("layout.header",["home"=>"news"])
 <div class="flex-center position-ref full-height">
 <div class="content">
@@ -11,3 +12,4 @@
     </div>
 </div>
 </div>
+@endsection

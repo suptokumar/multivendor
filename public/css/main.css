@@ -4,6 +4,9 @@
 	box-sizing: content-box;
 	font-family: arial;
 }
+input:focus {
+    outline-width: 0;
+}
 .flex-center{
 	justify-content: center;
 	align-items: center;

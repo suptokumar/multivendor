@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('product_size');
             $table->string('product_color');
             $table->string('product_category');
+            $table->integer('product_buy');
             $table->integer('product_price');
             $table->integer('product_discount');
             $table->integer('product_quantity');

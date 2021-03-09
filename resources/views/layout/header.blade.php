@@ -5,20 +5,20 @@
 </style>
 <div class="top_nav">
 <div>
-	<a href="deals" href="deals">Best Deals</a>
+	<a href="deals" href="{{url('/deals')}}">Best Deals</a>
 </div>
 <ul>
   <li><a class="home" href="{{url('/')}}">Home</a></li>
   <li><a class="news" href="{{url('/shop')}}">Shop</a></li>
   <li><a class="contact" href="{{url('/contact')}}">Contact</a></li>
   <li><a class="about" href="{{url('/about')}}">About us</a></li>
-  <li><a class="about" href="{{url('/login')}}">Login</a></li>
+  <li><a class="login" href="{{url('/login')}}">Login</a></li>
 </ul>
 </div>
 <div class="fulll_stak_menu">
 	<div class="partision">
 		
-<img src="{{asset('/img/onlineBD.PNG')}}" alt="onlineBD">
+<img src="{{asset('/public/img/onlineBD.PNG')}}" alt="onlineBD">
 	</div>
 	<div class="partision form">
 		

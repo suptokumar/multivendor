@@ -1,5 +1,7 @@
 @extends('layout.app')
 @section('title','About page')
+@section('content')
+
 @includeif("layout.header",["home"=>"about"])
 <div class="flex-center position-ref full-height">
 <div class="content">
@@ -19,3 +21,4 @@ echo $r = rand(10,20);
 @endphp
 </div>
 </div>
+@endsection

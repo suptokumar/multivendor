@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', "SiteController@home");
 Route::get('/about', "SiteController@blog");
 Route::get('/contact', "SiteController@contact");
-Route::get('/news', "SiteController@news");
+Route::get('/shop', "SiteController@shop");
 Route::get('/profile/{namevalue}', "SiteController@name");
 
 
