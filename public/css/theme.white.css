@@ -17,7 +17,7 @@ input:focus {
 }
 .top_nav {
 	overflow: hidden;
-	background: #3b6dbd;
+	background: #2d2e2c;
 	width: 100%;
 }
 .top_nav ul {
@@ -25,7 +25,7 @@ input:focus {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3b6dbd;
+  background-color: #2d2e2c;
   float: right;
 }
 
@@ -54,16 +54,16 @@ input:focus {
 	transition: .4s;
 }
 .top_nav div a:hover {
-	background: #4798ff;
+	background: #2d2e2c;
 	color: blanchedalmond;
 }
 .fulll_stak_menu {
-	background: #5282ce;
+	background: #fbfbfb;
 	overflow: hidden;
 }
 .fulll_stak_menu img {
 	height: 50px;
-	margin-left: 3px;
+	margin-left: 10px;
 	cursor: pointer;
 }
 .fulll_stak_menu .partision {
@@ -105,17 +105,17 @@ input:focus {
 }
 .fulll_stak_menu .user_setting a{
 	display: inline-block;
-	color: white;
+	color: #0084ea;
 	text-decoration: none;
 	padding: 10px;
 }
 .fulll_stak_menu .user_setting {
 	float: right;
 }
-.fulll_stak_menu .user_setting a span.glyphicon,.fulll_stak_menu .user_setting a span.fa {
+.fulll_stak_menu .user_setting a span.glyphicon {
 	font-weight: bold;
-	color: #fff59f;
-	font-size: 18px;
+	color: #348bff;
+	font-size: 20px;
 	vertical-align: bottom;
 	padding-right: 5px;
 }
@@ -131,55 +131,9 @@ input:focus {
 	width: 29%;
 	float: right;
 }
-.cart_box {
-    position: fixed;
-    right: 1px;
-    top: 50vh;
-    background: #5282ce;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    user-select: none;
-}
-
-/*dropdown css*/
-ul.submit_menu {
-    position: absolute;
-    z-index: 100;
-    box-shadow: 1px 1px 1px 0px #02283b;
-    display: none;
-    animation: fade .5s;
-}
-ul.submit_menu li {
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid #5f7cb5;
-}
-.top_nav ul li:hover ul.submit_menu {
-    display: block;
-}
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
-
-
-
 
 /* Responsive Menu */
-@media(max-width: 1383px){
+@media(max-width: 1258px){
 	.fulll_stak_menu .partision.form {
 	  width: 50%;
   }
@@ -191,7 +145,7 @@ ul.submit_menu li {
 	}
 	
 	.fulll_stak_menu .partision:last-child {
-		width: 197px;
+		width: 145px;
 	}
 	.fulll_stak_menu .partision:first-child {
 		width: 200px;
@@ -205,10 +159,10 @@ ul.submit_menu li {
 	  width: 50%;
   }
 	.fulll_stak_menu .partision:first-child {
-		width: 164px;
+		width: 180px;
 	}
 	.fulll_stak_menu .partision:last-child {
-		width: 195px;
+		width: 160px;
 	}
 	.fulll_stak_menu .partision form input#search{
 		width: 50%;
@@ -216,8 +170,8 @@ ul.submit_menu li {
 }
 @media(max-width: 836px){
 	.fulll_stak_menu .partision.form {
-	  width: 65%;
-	 }
+	  width: 70%;
+  }
 	.fulll_stak_menu .partision.form input[type=submit]{
 		display: none;
 	}
@@ -230,18 +184,12 @@ ul.submit_menu li {
 		display: none;
 	}
 	.fulll_stak_menu .partision:last-child {
-		width: 192px;
+		width: 160px;
 	}
 }
 @media(max-width: 672px){
 	.fulll_stak_menu .partision.form {
-	  width: 54%;
-	 }
-}
-@media(max-width: 769px){
-	.container {
-	  margin: 0 !important;
-	  padding: 0 !important;
+	  width: 60%;
   }
 }
 @media(max-width: 504px){
@@ -254,7 +202,7 @@ ul.submit_menu li {
 		padding: 10px 5px;
 	}
 	.fulll_stak_menu .partision:last-child {
-		width: 149px;
+		width: 115px;
 		margin: 0;
 	}
 	.top_nav ul li a {
@@ -270,9 +218,4 @@ ul.submit_menu li {
 		font-size: 15px !important;
 		margin: 0px !important;;
 	}
-	.deals {
-		font-size: 10px;
-	}
 }
-
-

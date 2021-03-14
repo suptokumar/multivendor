@@ -28,6 +28,11 @@ class CreateProductsTable extends Migration
             $table->longtext('product_description');
             $table->string('product_image');
             $table->string('product_galary');
+            $table->string('product_view');
+
+            $table->string('seo_tags');
+            $table->string('seo_author');
+            $table->string('seo_galary');
             $table->timestamps();
         });
     }
